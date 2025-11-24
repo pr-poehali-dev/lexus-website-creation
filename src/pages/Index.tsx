@@ -31,8 +31,8 @@ const Index = () => {
 
       if (response.ok && data.success) {
         toast({
-          title: "Заявка отправлена!",
-          description: "Мы свяжемся с вами в ближайшее время для подтверждения тест-драйва.",
+          title: "Request Sent!",
+          description: "We'll contact you shortly to confirm your test drive.",
         });
 
         setFormData({
@@ -43,15 +43,15 @@ const Index = () => {
         });
       } else {
         toast({
-          title: "Ошибка",
-          description: "Не удалось отправить заявку. Попробуйте позже.",
+          title: "Error",
+          description: "Failed to submit request. Please try again later.",
           variant: "destructive"
         });
       }
     } catch (error) {
       toast({
-        title: "Ошибка",
-        description: "Не удалось отправить заявку. Попробуйте позже.",
+        title: "Error",
+        description: "Failed to submit request. Please try again later.",
         variant: "destructive"
       });
     }
@@ -71,10 +71,10 @@ const Index = () => {
             </div>
             <div className="hidden md:flex items-center gap-8 text-sm font-medium">
               <a href="#home" className="hover:text-primary transition-colors">HOME</a>
-              <a href="#about" className="hover:text-primary transition-colors">О НАС</a>
-              <a href="#features" className="hover:text-primary transition-colors">ПРЕИМУЩЕСТВА</a>
-              <a href="#test-drive" className="hover:text-primary transition-colors">ТЕСТ-ДРАЙВ</a>
-              <a href="#contact" className="hover:text-primary transition-colors">КОНТАКТЫ</a>
+              <a href="#about" className="hover:text-primary transition-colors">ABOUT</a>
+              <a href="#features" className="hover:text-primary transition-colors">FEATURES</a>
+              <a href="#test-drive" className="hover:text-primary transition-colors">TEST DRIVE</a>
+              <a href="#contact" className="hover:text-primary transition-colors">CONTACT</a>
             </div>
           </div>
         </div>
@@ -89,23 +89,23 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-up">
               <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-sm font-semibold text-primary">
-                Роскошь в каждой детали
+                Luxury in Every Detail
               </div>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                 <span className="block text-secondary">LEXUS</span>
-                <span className="block text-primary mt-2">Новая эра</span>
-                <span className="block text-secondary mt-2">комфорта</span>
+                <span className="block text-primary mt-2">A New Era</span>
+                <span className="block text-secondary mt-2">of Comfort</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg">
-                Испытайте идеальное сочетание японской инженерии, инновационных технологий и безупречного стиля.
+                Experience the perfect blend of Japanese engineering, innovative technology, and impeccable style.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button onClick={scrollToForm} size="lg" className="text-lg px-8 py-6 hover:scale-105 transition-transform">
-                  Записаться на тест-драйв
+                  Book Test Drive
                   <Icon name="ArrowRight" className="ml-2" size={20} />
                 </Button>
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6 hover:scale-105 transition-transform">
-                  Узнать больше
+                  Learn More
                 </Button>
               </div>
             </div>
@@ -126,10 +126,10 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">
-              Почему выбирают Lexus
+              Why Choose Lexus
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Четыре ключевых преимущества, которые делают каждую поездку незабываемой
+              Four key advantages that make every journey unforgettable
             </p>
           </div>
 
@@ -140,9 +140,9 @@ const Index = () => {
                   <Icon name="Car" size={32} className="text-primary" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-secondary">1. Премиальный дизайн</h3>
+              <h3 className="text-2xl font-bold mb-4 text-secondary">1. Premium Design</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Безупречные линии кузова и инновационный дизайн интерьера создают атмосферу истинной роскоши. Каждая деталь продумана до мелочей.
+                Impeccable body lines and innovative interior design create an atmosphere of true luxury. Every detail is thoughtfully crafted.
               </p>
             </Card>
 
@@ -152,9 +152,9 @@ const Index = () => {
                   <Icon name="Sparkles" size={32} className="text-primary" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-secondary">2. Инновации</h3>
+              <h3 className="text-2xl font-bold mb-4 text-secondary">2. Innovation</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Передовые технологии помощи водителю, гибридные силовые установки и интеллектуальные системы безопасности последнего поколения.
+                Advanced driver assistance technologies, hybrid powertrains, and next-generation intelligent safety systems.
               </p>
             </Card>
 
@@ -164,9 +164,9 @@ const Index = () => {
                   <Icon name="Shield" size={32} className="text-primary" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-secondary">3. Надежность</h3>
+              <h3 className="text-2xl font-bold mb-4 text-secondary">3. Reliability</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Легендарное японское качество и надежность. Строгий контроль производства гарантирует безупречную работу каждого компонента.
+                Legendary Japanese quality and reliability. Rigorous production control ensures flawless performance of every component.
               </p>
             </Card>
 
@@ -176,9 +176,9 @@ const Index = () => {
                   <Icon name="Heart" size={32} className="text-primary" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-secondary">4. Комфорт</h3>
+              <h3 className="text-2xl font-bold mb-4 text-secondary">4. Comfort</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Превосходная шумоизоляция, анатомические сидения с климат-контролем и адаптивная подвеска для максимального удовольствия от вождения.
+                Superior sound insulation, ergonomic seats with climate control, and adaptive suspension for maximum driving pleasure.
               </p>
             </Card>
           </div>
@@ -190,10 +190,10 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Запишитесь на тест-драйв
+                Book Your Test Drive
               </h2>
               <p className="text-lg text-white/90">
-                Ощутите уникальный опыт вождения Lexus. Заполните форму, и мы свяжемся с вами для подтверждения записи.
+                Experience the unique Lexus driving experience. Fill out the form and we'll contact you to confirm your booking.
               </p>
             </div>
 
@@ -201,10 +201,10 @@ const Index = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-base font-semibold">Имя *</Label>
+                    <Label htmlFor="name" className="text-base font-semibold">Name *</Label>
                     <Input
                       id="name"
-                      placeholder="Иван Петров"
+                      placeholder="John Smith"
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       required
@@ -213,11 +213,11 @@ const Index = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-base font-semibold">Телефон *</Label>
+                    <Label htmlFor="phone" className="text-base font-semibold">Phone *</Label>
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+7 (999) 123-45-67"
+                      placeholder="+1 (555) 123-4567"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       required
@@ -240,7 +240,7 @@ const Index = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="model" className="text-base font-semibold">Модель для тест-драйва</Label>
+                  <Label htmlFor="model" className="text-base font-semibold">Test Drive Model</Label>
                   <select
                     id="model"
                     value={formData.model}
@@ -256,7 +256,7 @@ const Index = () => {
                 </div>
 
                 <Button type="submit" size="lg" className="w-full h-14 text-lg hover:scale-105 transition-transform">
-                  Отправить заявку
+                  Submit Request
                   <Icon name="Send" className="ml-2" size={20} />
                 </Button>
               </form>
@@ -271,40 +271,40 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">LEXUS</h3>
               <p className="text-white/80 leading-relaxed">
-                Японское качество и инновации в каждом автомобиле.
+                Japanese quality and innovation in every vehicle.
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Навигация</h4>
+              <h4 className="font-semibold mb-4 text-lg">Navigation</h4>
               <ul className="space-y-2 text-white/80">
-                <li><a href="#home" className="hover:text-primary transition-colors">Главная</a></li>
-                <li><a href="#about" className="hover:text-primary transition-colors">О нас</a></li>
-                <li><a href="#features" className="hover:text-primary transition-colors">Преимущества</a></li>
-                <li><a href="#test-drive" className="hover:text-primary transition-colors">Тест-драйв</a></li>
+                <li><a href="#home" className="hover:text-primary transition-colors">Home</a></li>
+                <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
+                <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
+                <li><a href="#test-drive" className="hover:text-primary transition-colors">Test Drive</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Контакты</h4>
+              <h4 className="font-semibold mb-4 text-lg">Contact</h4>
               <ul className="space-y-2 text-white/80">
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={18} />
-                  <span>+7 (495) 123-45-67</span>
+                  <span>+1 (555) 123-4567</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Mail" size={18} />
-                  <span>info@lexus.ru</span>
+                  <span>info@lexus.com</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={18} />
-                  <span>Москва, ул. Примерная, 1</span>
+                  <span>Los Angeles, CA 90001</span>
                 </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Социальные сети</h4>
+              <h4 className="font-semibold mb-4 text-lg">Social Media</h4>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                   <Icon name="Instagram" size={20} />
@@ -320,7 +320,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/20 pt-8 text-center text-white/60">
-            <p>&copy; 2024 Lexus. Все права защищены.</p>
+            <p>&copy; 2024 Lexus. All rights reserved.</p>
           </div>
         </div>
 
@@ -330,7 +330,7 @@ const Index = () => {
             size="lg"
             className="shadow-2xl hover:scale-110 transition-transform rounded-full px-6"
           >
-            Тест-драйв
+            Test Drive
             <Icon name="Calendar" className="ml-2" size={20} />
           </Button>
         </div>
